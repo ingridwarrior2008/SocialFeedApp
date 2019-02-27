@@ -30,7 +30,7 @@ NSString *const kCheckMarkIcon = @"✓";
     }
     
     self.authorNameLabel.text = post.author.account;
-    self.postText.text = post.text.plain;
+    self.postText.attributedText = model.postAttributeString;
     self.postDateLabel.text = [post.date postformatDate];
     
     [self.authorImageView sd_setImageWithURL:[NSURL URLWithString:post.author.pictureLink]];

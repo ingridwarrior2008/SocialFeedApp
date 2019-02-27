@@ -17,8 +17,8 @@ static NSString *const kLinkKey = @"link";
 + (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     PostTextMarkup *markup = [PostTextMarkup new];
-    markup.location = (NSInteger)dictionary[kLocationKey];
-    markup.length = (NSInteger)dictionary[kLengthKey];
+    markup.location = [dictionary[kLocationKey] integerValue];
+    markup.length = [dictionary[kLengthKey] integerValue];
     markup.link = dictionary[kLinkKey];
     
     return markup;

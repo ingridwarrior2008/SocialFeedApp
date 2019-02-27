@@ -47,6 +47,7 @@
 {
     PostCellViewModel *postViewModel = [PostCellViewModel new];
     postViewModel.post = self.posts[row];
+    [postViewModel setupPostAttributeString];
     return postViewModel;
 }
 

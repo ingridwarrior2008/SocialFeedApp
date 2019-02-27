@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PostCellViewModel : NSObject
 
 @property(nonatomic, strong) Post *post;
+@property(nonatomic) NSAttributedString *postAttributeString;
+
+- (void)setupPostAttributeString;
 
 @end
 

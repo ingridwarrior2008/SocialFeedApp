@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
                     failure:(void(^)(NSError *))failure;
 
 - (PostCellViewModel *)cellViewModel:(NSInteger)row;
+
 @end
 
 NS_ASSUME_NONNULL_END
